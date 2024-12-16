@@ -10,7 +10,7 @@ This document provides information on how to access and interact with the CRUD s
 The CRUD service is accessible at:
 
 ```
-http://http://ygolocalleaderboard.tplinkdns.com:8080/api
+http://ygolocalleaderboard.tplinkdns.com:8080/api
 ```
 
 
