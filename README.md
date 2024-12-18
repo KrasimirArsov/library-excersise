@@ -68,7 +68,7 @@ http://ygolocalleaderboard.tplinkdns.com:8080/api
 - **Endpoint**: `DELETE /books/{id}`
 - **Description**: Delete a book by its ID.
 - **Response**:
-    - `204 No Content` if the deletion is successful.
+    - `200 OK` if the deletion is successful.
     - `404 Not Found` if the book does not exist.
 
 ---
