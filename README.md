@@ -13,6 +13,18 @@ The CRUD service is accessible at:
 http://185.164.240.21/api/
 ```
 
+## Accounts
+You can authenticate with the following users:
+
+```
+user: john
+pass: 1234
+role: USER
+
+user: anna
+pass: 5678
+role: ADMIN
+```
 
 ---
 
