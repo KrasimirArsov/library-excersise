@@ -23,12 +23,14 @@ http://185.164.240.21/api/
 #### **1. Get All Books**
 - **Endpoint**: `GET /books`
 - **Description**: Retrieve a list of all books.
+- **Role**: "USER".
 - **Response**:
     - `200 OK` with a list of books in JSON format.
 
 #### **2. Get a Book by ID**
 - **Endpoint**: `GET /books/{id}`
 - **Description**: Retrieve details of a book by its ID.
+- **Role**: "USER".
 - **Response**:
     - `200 OK` if the book exists.
     - `404 Not Found` if the book does not exist.
@@ -36,6 +38,7 @@ http://185.164.240.21/api/
 #### **3. Create a New Book**
 - **Endpoint**: `POST /books`
 - **Description**: Add a new book to the system.
+- **Role**: "ADMIN".
 - **Request Body**:
   ```json
   {
@@ -51,6 +54,7 @@ http://185.164.240.21/api/
 #### **4. Update a Book**
 - **Endpoint**: `PUT /books/{id}`
 - **Description**: Update the details of an existing book.
+-  **Role**: "ADMIN".
 - **Request Body**:
   ```json
   {
@@ -67,6 +71,7 @@ http://185.164.240.21/api/
 #### **5. Delete a Book**
 - **Endpoint**: `DELETE /books/{id}`
 - **Description**: Delete a book by its ID.
+- **Role**: "ADMIN".
 - **Response**:
     - `200 OK` if the deletion is successful.
     - `404 Not Found` if the book does not exist.
@@ -78,14 +83,17 @@ http://185.164.240.21/api/
 #### **1. Get All Students**
 - **Endpoint**: `GET /students`
 - **Description**: Retrieve a list of all students.
+- **Role**: "USER".
 
 #### **2. Get a Student by ID**
 - **Endpoint**: `GET /students/{id}`
 - **Description**: Retrieve details of a student by their ID.
+- **Role**: "USER".
 
 #### **3. Create a New Student**
 - **Endpoint**: `POST /students`
 - **Description**: Add a new student to the system.
+- **Role**: "ADMIN".
 - **Request Body**:
   ```json
   {
@@ -96,9 +104,11 @@ http://185.164.240.21/api/
 
 #### **4. Update a Student**
 - **Endpoint**: `PUT /students/{id}`
+- **Role**: "ADMIN".
 
 #### **5. Delete a Student**
 - **Endpoint**: `DELETE /students/{id}`
+- **Role**: "ADMIN".
 
 ---
 
@@ -106,12 +116,15 @@ http://185.164.240.21/api/
 
 #### **1. Get All Borrow Records**
 - **Endpoint**: `GET /borrowRecords`
+- **Role**: "USER".
 
 #### **2. Get a Borrow Record by ID**
 - **Endpoint**: `GET /borrowRecords/{id}`
+- **Role**: "USER".
 
 #### **3. Create a New Borrow Record**
 - **Endpoint**: `POST /borrowRecords`
+- **Role**: "ADMIN".
 - **Request Body**:
   ```json
   {
@@ -124,6 +137,7 @@ http://185.164.240.21/api/
 
 #### **4. Update a Borrow Record**
 - **Endpoint**: `PUT /borrowRecords/{id}`
+- **Role**: "ADMIN".
 - **Request Body**:
   ```json
   {
@@ -136,6 +150,7 @@ http://185.164.240.21/api/
 
 #### **5. Delete a Borrow Record**
 - **Endpoint**: `DELETE /borrowRecords/{id}`
+- **Role**: "ADMIN".
 
 ---
 
