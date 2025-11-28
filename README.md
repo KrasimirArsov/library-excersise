@@ -35,14 +35,14 @@ role: ADMIN
 #### **1. Get All Books**
 - **Endpoint**: `GET /books`
 - **Description**: Retrieve a list of all books.
-- **Role**: "USER".
+- **Role**: "USER"`, "ADMIN".
 - **Response**:
     - `200 OK` with a list of books in JSON format.
 
 #### **2. Get a Book by ID**
 - **Endpoint**: `GET /books/{id}`
 - **Description**: Retrieve details of a book by its ID.
-- **Role**: "USER".
+- **Role**: "USER"`, "ADMIN".
 - **Response**:
     - `200 OK` if the book exists.
     - `404 Not Found` if the book does not exist.
@@ -95,12 +95,12 @@ role: ADMIN
 #### **1. Get All Students**
 - **Endpoint**: `GET /students`
 - **Description**: Retrieve a list of all students.
-- **Role**: "USER".
+- **Role**: "USER"`, "ADMIN".
 
 #### **2. Get a Student by ID**
 - **Endpoint**: `GET /students/{id}`
 - **Description**: Retrieve details of a student by their ID.
-- **Role**: "USER".
+- **Role**: "USER"`, "ADMIN".
 
 #### **3. Create a New Student**
 - **Endpoint**: `POST /students`
@@ -128,11 +128,11 @@ role: ADMIN
 
 #### **1. Get All Borrow Records**
 - **Endpoint**: `GET /borrowRecords`
-- **Role**: "USER".
+- **Role**: "USER"`, "ADMIN".
 
 #### **2. Get a Borrow Record by ID**
 - **Endpoint**: `GET /borrowRecords/{id}`
-- **Role**: "USER".
+- **Role**: "USER"`, "ADMIN".
 
 #### **3. Create a New Borrow Record**
 - **Endpoint**: `POST /borrowRecords`
